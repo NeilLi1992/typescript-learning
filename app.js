@@ -84,6 +84,10 @@ var myRealRealAge = 27;
 myRealRealAge = "27";
 // check types
 var finalValue = 30;
-if (typeof finalValue == "Complex") {
+if (typeof finalValue == "number") {
     console.log("Final value is a number");
+}
+// never type, it's not returning nothing, it's never returning
+function neverReturns() {
+    throw new Error("An error");
 }

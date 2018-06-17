@@ -110,3 +110,8 @@ let finalValue = 30;
 if (typeof finalValue == "number") {
     console.log("Final value is a number");
 }
+
+// never type, it's not returning nothing, it's never returning
+function neverReturns(): never {
+    throw new Error("An error");
+}
