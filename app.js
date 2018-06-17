@@ -28,9 +28,29 @@ var Color;
 (function (Color) {
     // behind the scene, each stands for an integer
     Color[Color["Gray"] = 0] = "Gray";
-    Color[Color["Green"] = 0] = "Green";
-    Color[Color["Blue"] = 1] = "Blue";
+    Color[Color["Green"] = 100] = "Green";
+    Color[Color["Blue"] = 101] = "Blue";
 })(Color || (Color = {}));
 var myColor = Color.Blue;
 console.log(myColor);
-console.log(Color.Gray);
+// any, try to avoid any
+var car = "BMW";
+console.log(car);
+car = {
+    brand: "BMW",
+    series: 3
+};
+console.log(car);
+function returnMyName() {
+    return myName;
+}
+console.log(returnMyName());
+// void
+function sayHell() {
+    console.log("Hello");
+}
+// argument types
+function multiply(value1, value2) {
+    return value1 * value2;
+}
+console.log(multiply(2, 5));
