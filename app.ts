@@ -12,6 +12,13 @@ const [hobby1, hobby2] = myHobbies;
 console.log(hobby1, hobby2);
 
 const userData = {userName: "Yong", age: 26};
-const {userName, age} = userData;
+const {userName: myName, age} = userData;
 
-console.log(userName, age);
+console.log(myName, age);
+
+// template literals
+const userName = "Max";
+const greeting = `This is a heading!
+    I'm ${userName}
+`;
+console.log(greeting);

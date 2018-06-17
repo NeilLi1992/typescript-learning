@@ -11,6 +11,10 @@ var myHobbies = ["Cooking", "Sports"];
 var hobby1 = myHobbies[0], hobby2 = myHobbies[1];
 console.log(hobby1, hobby2);
 var userData = { userName: "Yong", age: 26 };
-var userName = userData.userName, age = userData.age;
-console.log(userName, age);
+var myName = userData.userName, age = userData.age;
+console.log(myName, age);
+// template literals
+var userName = "Max";
+var greeting = "This is a heading!\n    I'm " + userName + "\n";
+console.log(greeting);
 //# sourceMappingURL=app.js.map
