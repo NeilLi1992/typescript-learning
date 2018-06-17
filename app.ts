@@ -56,7 +56,7 @@ function returnMyName(): string {
 console.log(returnMyName());
 
 // void
-function sayHell(): void {
+function sayHello(): void {
     console.log("Hello");
 }
 
@@ -66,3 +66,10 @@ function multiply(value1: number, value2: number): number {
 }
 
 console.log(multiply(2, 5));
+
+// function types
+let myMultiply: (val1: number, val2: number) => number;
+myMultiply = multiply;
+
+
+

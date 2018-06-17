@@ -46,7 +46,7 @@ function returnMyName() {
 }
 console.log(returnMyName());
 // void
-function sayHell() {
+function sayHello() {
     console.log("Hello");
 }
 // argument types
@@ -54,3 +54,8 @@ function multiply(value1, value2) {
     return value1 * value2;
 }
 console.log(multiply(2, 5));
+// function types
+var myMultiply;
+myMultiply = sayHello;
+myMultiply = multiply;
+console.log(myMultiply(5, 2));
