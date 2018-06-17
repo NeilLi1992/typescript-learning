@@ -31,13 +31,11 @@ person.printAge();
 // Inheritance
 var Yong = /** @class */ (function (_super) {
     __extends(Yong, _super);
-    function Yong() {
-        var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.name = "Max";
-        return _this;
+    function Yong(username) {
+        return _super.call(this, "Yong", username) || this;
     }
     return Yong;
 }(Person));
-var yong = new Yong("Anna", "neil");
+var yong = new Yong("yli989");
 console.log(yong);
 //# sourceMappingURL=app.js.map

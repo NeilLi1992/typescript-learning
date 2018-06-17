@@ -25,8 +25,10 @@ person.printAge();
 
 // Inheritance
 class Yong extends Person {
-    name = "Max";
+    constructor(username) {
+        super("Yong", username); // when extending a base class, always call 'super' first.
+    }
 }
 
-const yong = new Yong("Anna", "neil");
+const yong = new Yong("yli989");
 console.log(yong);
