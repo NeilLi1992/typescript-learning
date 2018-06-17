@@ -99,4 +99,8 @@ let complex2: Complex = {
     output: function(all: boolean): number[] {
         return this.data;
     }
-}
+};
+
+// union types, restrict to some certain types
+let myRealRealAge: number | string = 27;
+myRealRealAge = "27";

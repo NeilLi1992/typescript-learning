@@ -79,3 +79,6 @@ var complex2 = {
         return this.data;
     }
 };
+// union types
+var myRealRealAge = true;
+myRealRealAge = "27";
