@@ -1,2 +1,4 @@
 "use strict";
-console.log("It works!");
+// string
+var myName = 'Yong';
+myName = 28;

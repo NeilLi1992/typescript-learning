@@ -1,1 +1,3 @@
-console.log("It works!");
+// string
+let myName = 'Yong';
+myName = 28;
