@@ -19,3 +19,9 @@ let hasHobbies = false;
 let myRealAge: number; // explicitly assign type
 myRealAge = 27;
 // myRealAge = '27';
+
+// array
+let hobbies: any[] = ["Cooking", "Sports"];
+// hobbies = [100]; // error, the above assignment restricts the array to hold strings only.
+hobbies = [100];
+// hobbies = 100; // error, hobbies must be an array, number won't do
