@@ -69,3 +69,27 @@ class Helpers {
 
 console.log(2 * Helpers.PI);
 console.log(Helpers.calcCirumference(8));
+
+// Abstract Classes
+abstract class Project { // can't be instantiated directly
+    projectName: string = "Default";
+    budget: number;
+
+    // once extended this class, we need to implement 'changeName' method in the inherited class.
+    abstract changeName(name: string): void;
+
+    calcBudget() {
+        return this.budget * 2;
+    }
+}
+
+class ITProject extends Project {
+    changeName(name: string): void {
+        this.projectName = name;
+    }
+}
+
+let newProject = new ITProject();
+console.log(newProject);
+newProject.changeName("Super IT Project");
+console.log(newProject);
