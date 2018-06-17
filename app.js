@@ -56,6 +56,14 @@ function multiply(value1, value2) {
 console.log(multiply(2, 5));
 // function types
 var myMultiply;
-myMultiply = sayHello;
 myMultiply = multiply;
-console.log(myMultiply(5, 2));
+// objects
+var userData = {
+    name: "Max",
+    age: "adf"
+};
+// userData = {}; // can't assign, the type of the object is deduced already.
+// userData = {
+//     a: "Hello", // name of the properties don't match
+//     b: 22
+// };

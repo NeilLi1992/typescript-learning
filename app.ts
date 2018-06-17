@@ -71,5 +71,15 @@ console.log(multiply(2, 5));
 let myMultiply: (val1: number, val2: number) => number;
 myMultiply = multiply;
 
+// objects
+let userData: { name: string, age: number } = {
+    name: "Max",
+    age: 27
+};
 
+// userData = {}; // can't assign, the type of the object is deduced already.
 
+// userData = {
+//     a: "Hello", // name of the properties don't match
+//     b: 22
+// };
