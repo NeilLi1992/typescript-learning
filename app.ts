@@ -22,3 +22,11 @@ const person = new Person("Yong", "yli989");
 console.log(person.name, person.username);
 person.printAge();
 // person.setType("Cool guy");
+
+// Inheritance
+class Yong extends Person {
+    name = "Max";
+}
+
+const yong = new Yong("Anna", "neil");
+console.log(yong);
