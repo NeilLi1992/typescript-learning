@@ -108,7 +108,6 @@ console.log(newProject);
 // private constructors
 var OnlyOne = /** @class */ (function () {
     function OnlyOne(name) {
-        this.name = name;
     }
     OnlyOne.getInstance = function () {
         if (!OnlyOne.instance) {
@@ -120,4 +119,5 @@ var OnlyOne = /** @class */ (function () {
 }());
 // let wrong = new OnlyOne("The Only One");
 var right = OnlyOne.getInstance();
+console.log(right.name);
 //# sourceMappingURL=app.js.map
