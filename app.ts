@@ -29,3 +29,13 @@ hobbies = [100];
 // tuples, not available in JS
 let address: [string, number] = ["Superstreet", 99]; // limit to a tuple with just two elements, order is important
 
+// enum
+enum Color {
+    // behind the scene, each stands for an integer
+    Gray,
+    Green = 100,
+    Blue
+}
+
+let myColor: Color = Color.Blue;
+console.log(myColor);
