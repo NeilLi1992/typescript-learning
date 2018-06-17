@@ -79,6 +79,11 @@ var complex2 = {
         return this.data;
     }
 };
-// union types
-var myRealRealAge = true;
+// union types, restrict to some certain types
+var myRealRealAge = 27;
 myRealRealAge = "27";
+// check types
+var finalValue = 30;
+if (typeof finalValue == "Complex") {
+    console.log("Final value is a number");
+}
