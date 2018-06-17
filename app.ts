@@ -39,3 +39,13 @@ enum Color {
 
 let myColor: Color = Color.Blue;
 console.log(myColor);
+
+// any, try to avoid any
+let car: any = "BMW";
+console.log(car);
+car = { // re-assign to another type
+    brand: "BMW",
+    series: 3
+};
+console.log(car);
+
