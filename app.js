@@ -73,4 +73,9 @@ var complex = {
         return this.data;
     }
 };
-complex = {};
+var complex2 = {
+    data: [100, 3.99, 10],
+    output: function (all) {
+        return this.data;
+    }
+};
