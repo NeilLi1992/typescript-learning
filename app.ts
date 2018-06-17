@@ -83,3 +83,10 @@ let userData: { name: string, age: number } = {
 //     a: "Hello", // name of the properties don't match
 //     b: 22
 // };
+
+let complex: {data: number[], output: (all: boolean) => number[]} = {
+    data: [100, 3.99, 10],
+    output: function(all: boolean): number[] {
+        return this.data;
+    }
+};

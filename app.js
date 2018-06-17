@@ -60,10 +60,17 @@ myMultiply = multiply;
 // objects
 var userData = {
     name: "Max",
-    age: "adf"
+    age: 27
 };
 // userData = {}; // can't assign, the type of the object is deduced already.
 // userData = {
 //     a: "Hello", // name of the properties don't match
 //     b: 22
 // };
+var complex = {
+    data: [100, 3.99, 10],
+    output: function (all) {
+        return this.data;
+    }
+};
+complex = {};
