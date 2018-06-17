@@ -10,4 +10,7 @@ console.log(makeArray("Yong", 1, 2, 6));
 var myHobbies = ["Cooking", "Sports"];
 var hobby1 = myHobbies[0], hobby2 = myHobbies[1];
 console.log(hobby1, hobby2);
+var userData = { userName: "Yong", age: 26 };
+var userName = userData.userName, age = userData.age;
+console.log(userName, age);
 //# sourceMappingURL=app.js.map
