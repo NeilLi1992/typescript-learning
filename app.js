@@ -11,7 +11,7 @@ var __extends = (this && this.__extends) || (function () {
 var Person = /** @class */ (function () {
     function Person(name, username) {
         this.username = username;
-        this.age = 26;
+        this.age = 26; // get inherited
         this.name = name;
     }
     Person.prototype.printAge = function () {
@@ -32,7 +32,9 @@ person.printAge();
 var Yong = /** @class */ (function (_super) {
     __extends(Yong, _super);
     function Yong(username) {
-        return _super.call(this, "Yong", username) || this;
+        var _this = _super.call(this, "Yong", username) || this;
+        _this.age = 31;
+        return _this;
     }
     return Yong;
 }(Person));

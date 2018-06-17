@@ -1,7 +1,7 @@
 class Person {
     name: string;
-    private type: string;
-    protected age: number = 26;
+    private type: string; // doesn't get inherited
+    protected age: number = 26; // get inherited
 
     constructor(name: string, public username: string) {
         this.name = name;
@@ -27,6 +27,7 @@ person.printAge();
 class Yong extends Person {
     constructor(username) {
         super("Yong", username); // when extending a base class, always call 'super' first.
+        this.age = 31;
     }
 }
 
