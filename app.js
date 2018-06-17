@@ -1,4 +1,3 @@
-"use strict";
 // string
 var myName = 'Yong';
 // myName = 28; // error, can't reassign a different type
@@ -91,3 +90,10 @@ if (typeof finalValue == "number") {
 function neverReturns() {
     throw new Error("An error");
 }
+// Nullable types
+var canBeNull = 12;
+canBeNull = null;
+var canAlsoBeNull;
+canAlsoBeNull = null;
+var canThisBeAny = null;
+canThisBeAny = 20;
