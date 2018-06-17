@@ -20,4 +20,6 @@ myRealAge = 27;
 var hobbies = ["Cooking", "Sports"];
 // hobbies = [100]; // error, the above assignment restricts the array to hold strings only.
 hobbies = [100];
-hobbies = 100;
+// hobbies = 100; // error, hobbies must be an array, number won't do
+// tuples, not available in JS
+var address = ["Superstreet", 99]; // limit to a tuple with just two elements, order is important

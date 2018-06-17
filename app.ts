@@ -25,3 +25,7 @@ let hobbies: any[] = ["Cooking", "Sports"];
 // hobbies = [100]; // error, the above assignment restricts the array to hold strings only.
 hobbies = [100];
 // hobbies = 100; // error, hobbies must be an array, number won't do
+
+// tuples, not available in JS
+let address: [string, number] = ["Superstreet", 99]; // limit to a tuple with just two elements, order is important
+
